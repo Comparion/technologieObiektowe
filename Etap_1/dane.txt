@@ -1,0 +1,12 @@
+Banaś Patryk, patryk_banas@o2.pl, s088933@student.tu.kielce.pl, 1ID21A
+41. Porównanie rozwiązań związanych z testowaniem
+Java, Spring Boot, Mockito, PowerMockito, EasyMock, JMockit
+Prace do wykonania:
+•	Zapoznanie się z biblioteką Mockito
+•	Zapoznanie się z biblioteką EasyMock
+•	Zapoznanie się z biblioteką JMockit
+•	Zapoznanie się z biblioteką PowerMockito
+•	Porównanie ze sobą przedstawionych rozwiązań
+Temat projektu z przedmiotu "Programowanie systemów rozproszonych": Cloud drive
+Temat pracy inżynierskiej: "Projekt i implementacja aplikacji internetowej TEOB ( The end of boredom)"
+Temat alternatywny projektu: "Emulacja programowania obiektowego w językach nieobiektowych np. C"
