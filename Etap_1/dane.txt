@@ -1,6 +1,6 @@
 Banaś Patryk, patryk_banas@o2.pl, s088933@student.tu.kielce.pl, 1ID21A
 41. Porównanie rozwiązań związanych z testowaniem
-Java, Spring Boot, Mockito, PowerMockito, JUnit, TestNG
+Java, Spring Boot, Mockito, JUnit, TestNG
 Prace do wykonania:
 • Przygotowanie części teoretycznej
 • Porównanie funkcjonalności
