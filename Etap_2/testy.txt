@@ -1,0 +1,4 @@
+Im wcześniej zostanie wykryty błąd tym są mniejsze koszty jego naprawienia, dzięki temu pozwala to frimą na zaoszczędzenie pieniędzy.
+Pisanie testów jednostkowych, pozwala na wykrycie głędów w najwcześniejszej możliwej fazie, już w trackie pisania programu. Każdy programista powinien przed oddaniem kodu do użytku
+przetestować, czy wszystko działa jak należy. Manualne testowanie to jednak żmudna, mozlona i czasochłonna praca. Często zdarza się również że programista przeoczny jakiś mały bła
+który zakończy się błędem w programie. Dlatego pisze się testy jednostkowe, polegające na wydzielaniu, mniejszych części/jednostek programu i testowanie ich w odosobnieniu.
