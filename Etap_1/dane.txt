@@ -1,12 +1,15 @@
 Banaś Patryk, patryk_banas@o2.pl, s088933@student.tu.kielce.pl, 1ID21A
 41. Porównanie rozwiązań związanych z testowaniem
-Java, Spring Boot, Mockito, JUnit, TestNG
+Java, Spring Boot, JUnit, TestNG, EasyMock, Mockito
 Prace do wykonania:
 • Przygotowanie części teoretycznej
 • Porównanie funkcjonalności
 • Porównanie łatwości w użyciu
 • Porównanie składni
 • Porównanie szybkości działania
+• Zajetość pamięci
+• Wydajność
+
 Temat projektu z przedmiotu "Programowanie systemów rozproszonych": Cloud drive
 Temat pracy inżynierskiej: "Projekt i implementacja aplikacji internetowej TEOB ( The end of boredom)"
 https://github.com/Comparion/technologieObiektowe
