@@ -1,0 +1,1 @@
+Przygotowanie klasy ośrodka zdrowia i przygotowanie kilku testów z użyciem JUnit
