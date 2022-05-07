@@ -1,1 +1,3 @@
-Przygotowanie klasy ośrodka zdrowia i przygotowanie kilku testów z użyciem JUnit
+Przygotowanie klasy ośrodka zdrowia i przygotowanie kilku testów z użyciem JUnit.
+Dodanie testów z wykorzystaniem TestNG.
+Dodanie testów parametryzowanych.
