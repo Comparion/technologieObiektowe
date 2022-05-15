@@ -4,7 +4,6 @@ import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import healthclinic.HealthClinic;
-import org.testng.asserts.Assertion;
 
 public class HealthClinicTestNG {
 
@@ -58,7 +57,8 @@ public class HealthClinicTestNG {
 
     @DataProvider(name = "data")
     public Object[][] dataProviderMethod() {
-        return new Object[][]{{80,80,80, true},
+        return new Object[][]{
+                {80,80,80, true},
                 {80,80,10, false},
                 {60,70,40, false}
         };
@@ -106,5 +106,24 @@ public class HealthClinicTestNG {
         Assert.assertThrows(IllegalArgumentException.class, () -> clinic.analyzeHealthByVitalSigns(systolicBloodPressure, diastolicBloodPressure, pulse));
     }
 
+    @Test
+    public void longHealthClinicTest_1s() throws InterruptedException {
+        Thread.sleep(1000);
+    }
+
+    @Test
+    public void longHealthClinicTest_2s() throws InterruptedException {
+        Thread.sleep(2000);
+    }
+
+    @Test
+    public void longHealthClinicTest_5s() throws InterruptedException {
+        Thread.sleep(5000);
+    }
+
+    @Test
+    public void longHealthClinicTest_10s() throws InterruptedException {
+        Thread.sleep(10000);
+    }
 
 }

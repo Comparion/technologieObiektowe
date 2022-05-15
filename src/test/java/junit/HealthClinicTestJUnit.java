@@ -60,7 +60,8 @@ public class HealthClinicTestJUnit {
     }
 
     private static Stream<Arguments> data(){
-        return Stream.of(Arguments.of(80,80,80, true),
+        return Stream.of(
+                Arguments.of(80,80,80, true),
                 Arguments.of(80,80,10, false),
                 Arguments.of(60,70,40, false));
     }
@@ -106,5 +107,25 @@ public class HealthClinicTestJUnit {
 
         //then
         Assertions.assertThrows(IllegalArgumentException.class, () -> clinic.analyzeHealthByVitalSigns(systolicBloodPressure, diastolicBloodPressure, pulse));
+    }
+
+    @Test
+    public void longHealthClinicTest_1s() throws InterruptedException {
+        Thread.sleep(1000);
+    }
+
+    @Test
+    public void longHealthClinicTest_2s() throws InterruptedException {
+        Thread.sleep(2000);
+    }
+
+    @Test
+    public void longHealthClinicTest_5s() throws InterruptedException {
+        Thread.sleep(5000);
+    }
+
+    @Test
+    public void longHealthClinicTest_10s() throws InterruptedException {
+        Thread.sleep(10000);
     }
 }
