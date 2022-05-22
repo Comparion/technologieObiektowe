@@ -1,6 +1,27 @@
 package healthclinic;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class HealthClinic {
+
+    public List<HealthClinicResult> analyzeHealthByVitalSignsList(List<VitalSignsDetails> vitalSignsDetails) {
+
+        List<HealthClinicResult> results = new ArrayList<>();
+        vitalSignsDetails.forEach(details -> {
+            boolean analyzeResult = analyzeSingle(details);
+            results.add(new HealthClinicResult(details.getId(),analyzeResult));
+        });
+
+        return results;
+    }
+
+    private boolean analyzeSingle(VitalSignsDetails vitalSignsDetails) {
+        Integer systolicBloodPressure = vitalSignsDetails.getSystolicBloodPressure();
+        Integer diastolicBloodPressure = vitalSignsDetails.getDiastolicBloodPressure();
+        Integer pulse = vitalSignsDetails.getPulse();
+        return analyzeHealthByVitalSigns(systolicBloodPressure, diastolicBloodPressure, pulse);
+    }
 
     public boolean analyzeHealthByVitalSigns(Integer systolicBloodPressure, Integer diastolicBloodPressure, Integer pulse) {
 
