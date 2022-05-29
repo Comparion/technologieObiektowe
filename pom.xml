@@ -16,58 +16,21 @@
 
     <build>
         <plugins>
-<!--            <plugin>-->
-<!--                <artifactId>maven-compiler-plugin</artifactId>-->
-<!--                <version>3.8.1</version>-->
-<!--            </plugin>-->
             <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>2.22.2</version>
-<!--                <dependencies>-->
-<!--                    <dependency>-->
-<!--                        <groupId>org.apache.maven.surefire</groupId>-->
-<!--                        <artifactId>surefire-junit47</artifactId>-->
-<!--                        <version>2.22.2</version>-->
-<!--                    </dependency>-->
-<!--                    <dependency>-->
-<!--                        <groupId>org.apache.maven.surefire</groupId>-->
-<!--                        <artifactId>surefire-testng</artifactId>-->
-<!--                        <version>2.22.2</version>-->
-<!--                    </dependency>-->
-<!--                </dependencies>-->
                 <configuration>
 <!--                    <parallel>methods</parallel>-->
 <!--                    <threadCount>4</threadCount>-->
-<!--                    <properties>-->
-<!--&lt;!&ndash;                        <configurationParameters>&ndash;&gt;-->
-<!--&lt;!&ndash;                            junit.jupiter.conditions.deactivate = *&ndash;&gt;-->
-<!--&lt;!&ndash;                            junit.jupiter.extensions.autodetection.enabled = true&ndash;&gt;-->
-<!--&lt;!&ndash;                            junit.jupiter.testinstance.lifecycle.default = per_class&ndash;&gt;-->
-<!--&lt;!&ndash;                            junit.jupiter.execution.parallel.enabled = true&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;                            junit.jupiter.execution.parallel.enabled=true&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;                            junit.jupiter.execution.parallel.config.strategy=fixed&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;                            junit.jupiter.execution.parallel.config.fixed.parallelism=4&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;                            junit.jupiter.execution.parallel.enabled = true&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;                            junit.jupiter.execution.parallel.mode.default = s&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;                            junit.jupiter.execution.parallel.mode.classes.default = same_thread&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;                        </configurationParameters>&ndash;&gt;-->
-<!--                    </properties>-->
-<!--                    <suiteXmlFiles>-->
-<!--                        <suiteXmlFile>testNG.xml</suiteXmlFile>-->
-<!--&lt;!&ndash;                        <suiteXmlFile>suites-test-testng.xml</suiteXmlFile>&ndash;&gt;-->
-<!--                    </suiteXmlFiles>-->
-<!--                    <includes>-->
-<!--&lt;!&ndash;                        <include>testng.HealthClinicTestNG</include>&ndash;&gt;-->
-<!--                        <include>junit.HealthClinicTestJUnit</include>-->
-<!--                    </includes>-->
-<!--                    <classes>-->
-<!--                        <class name="com.howtodoinjava.parallelism.ParallelMethodTest" />-->
-<!--                    </classes>-->
                 </configuration>
             </plugin>
         </plugins>
     </build>
-
 
     <dependencies>
         <dependency>
@@ -88,13 +51,6 @@
 <!--            <version>6.14.3</version>-->
 <!--            <scope>test</scope>-->
 <!--        </dependency>-->
-<!--        <dependency>-->
-<!--            <groupId>junit</groupId>-->
-<!--            <artifactId>junit</artifactId>-->
-<!--            <version>4.12</version>-->
-<!--            <scope>test</scope>-->
-<!--        </dependency>-->
     </dependencies>
-
 
 </project>

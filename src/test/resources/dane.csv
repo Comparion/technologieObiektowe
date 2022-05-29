@@ -1,0 +1,4 @@
+systolicBloodPressure;diastolicBloodPressure;pulse;result
+80;80;80;true
+80;80;10;false
+60;70;40;false
