@@ -1,18 +1,24 @@
 package junit;
 
-import org.junit.Test;
-import org.junit.Assert;
-//import org.junit.jupiter.api.Assertions;
-//import org.junit.jupiter.api.Test;
-import healthclinic.HealthClinic;
-//import org.junit.jupiter.params.ParameterizedTest;
-//import org.junit.jupiter.params.provider.Arguments;
-//import org.junit.jupiter.params.provider.MethodSource;
+//import org.junit.Test;
+//import org.junit.Assert;
+//import healthclinic.HealthClinic;
+//import org.junit.experimental.categories.Category;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.parallel.Execution;
+import org.junit.jupiter.api.parallel.ExecutionMode;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.Arguments;
+import org.junit.jupiter.params.provider.MethodSource;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import java.util.stream.Stream;
 
+//@Execution(CONCURRENT)
+@Execution(ExecutionMode.CONCURRENT)
 public class HealthClinicTestJUnit {
-
+//
 //    @Test
 //    public void analyzeHealthByVitalSigns_allValuesOk_resultTrue() {
 //
@@ -26,7 +32,8 @@ public class HealthClinicTestJUnit {
 //        boolean result = clinic.analyzeHealthByVitalSigns(systolicBloodPressure, diastolicBloodPressure, pulse);
 //
 //        //then
-//        Assertions.assertTrue(result);
+//        Assert.assertTrue(result);
+//        //Assertions.assertTrue(result);
 //    }
 //
 //    @Test
@@ -42,7 +49,8 @@ public class HealthClinicTestJUnit {
 //        boolean result = clinic.analyzeHealthByVitalSigns(systolicBloodPressure, diastolicBloodPressure, pulse);
 //
 //        //then
-//        Assertions.assertFalse(result);
+//        Assert.assertFalse(result);
+//        //Assertions.assertFalse(result);
 //    }
 //
 //    @Test
@@ -58,58 +66,60 @@ public class HealthClinicTestJUnit {
 //        boolean result = clinic.analyzeHealthByVitalSigns(systolicBloodPressure, diastolicBloodPressure, pulse);
 //
 //        //then
-//        Assertions.assertFalse(result);
+//        Assert.assertFalse(result);
+//        //Assertions.assertFalse(result);
 //    }
 //
-//    private static Stream<Arguments> data(){
-//        return Stream.of(
-//                Arguments.of(80,80,80, true),
-//                Arguments.of(80,80,10, false),
-//                Arguments.of(60,70,40, false));
-//    }
+////    private static Stream<Arguments> data(){
+////        return Stream.of(
+////                Arguments.of(80,80,80, true),
+////                Arguments.of(80,80,10, false),
+////                Arguments.of(60,70,40, false));
+////    }
+////
+////    @ParameterizedTest
+////    @MethodSource("data")
+////    public void analyzeHealthByVitalSigns_withDataFromMethod_resultFromData(Integer systolicBloodPressure, Integer diastolicBloodPressure, Integer pulse, boolean expectedResult){
+////
+////        //given
+////        HealthClinic clinic = new HealthClinic();
+////
+////        //when
+////        boolean result = clinic.analyzeHealthByVitalSigns(systolicBloodPressure, diastolicBloodPressure, pulse);
+////
+////        //then
+////        Assertions.assertEquals(expectedResult, result);
+////    }
 //
-//    @ParameterizedTest
-//    @MethodSource("data")
-//    public void analyzeHealthByVitalSigns_withDataFromMethod_resultFromData(Integer systolicBloodPressure, Integer diastolicBloodPressure, Integer pulse, boolean expectedResult){
-//
-//        //given
-//        HealthClinic clinic = new HealthClinic();
-//
-//        //when
-//        boolean result = clinic.analyzeHealthByVitalSigns(systolicBloodPressure, diastolicBloodPressure, pulse);
-//
-//        //then
-//        Assertions.assertEquals(expectedResult, result);
-//    }
-//
-//    @Test
-//    public void analyzeHealthByVitalSigns_pulseNull_throwsIllegalArgumentException() {
-//
-//        //given
-//        Integer systolicBloodPressure = 80;
-//        Integer diastolicBloodPressure = 80;
-//        Integer pulse = null;
-//        HealthClinic clinic = new HealthClinic();
-//
-//        //when
-//
-//        //then
-//        Assertions.assertThrows(IllegalArgumentException.class, () -> clinic.analyzeHealthByVitalSigns(systolicBloodPressure, diastolicBloodPressure, pulse));
-//    }
-//
-//    @Test
-//    public void analyzeHealthByVitalSigns_pulseThanZero_throwsIllegalArgumentException() {
-//
-//        //given
-//        Integer systolicBloodPressure = 80;
-//        Integer diastolicBloodPressure = 80;
-//        Integer pulse = -5;
-//        HealthClinic clinic = new HealthClinic();
-//        //when
-//
-//        //then
-//        Assertions.assertThrows(IllegalArgumentException.class, () -> clinic.analyzeHealthByVitalSigns(systolicBloodPressure, diastolicBloodPressure, pulse));
-//    }
+////    @Test
+////    public void analyzeHealthByVitalSigns_pulseNull_throwsIllegalArgumentException() {
+////
+////        //given
+////        Integer systolicBloodPressure = 80;
+////        Integer diastolicBloodPressure = 80;
+////        Integer pulse = null;
+////        HealthClinic clinic = new HealthClinic();
+////
+////        //when
+////
+////        //then
+////
+////        Assertions.assertThrows(IllegalArgumentException.class, () -> clinic.analyzeHealthByVitalSigns(systolicBloodPressure, diastolicBloodPressure, pulse));
+////    }
+////
+////    @Test
+////    public void analyzeHealthByVitalSigns_pulseThanZero_throwsIllegalArgumentException() {
+////
+////        //given
+////        Integer systolicBloodPressure = 80;
+////        Integer diastolicBloodPressure = 80;
+////        Integer pulse = -5;
+////        HealthClinic clinic = new HealthClinic();
+////        //when
+////
+////        //then
+////        Assertions.assertThrows(IllegalArgumentException.class, () -> clinic.analyzeHealthByVitalSigns(systolicBloodPressure, diastolicBloodPressure, pulse));
+////    }
 
     @Test
     public void longHealthClinicTest_1s() throws InterruptedException {

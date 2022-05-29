@@ -1,0 +1,1 @@
+Testowanie na wielu wątkach zakończone powodzeniem.
